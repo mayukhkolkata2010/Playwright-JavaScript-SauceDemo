@@ -1,32 +1,314 @@
-<testsuites id="" name="" tests="10" failures="0" skipped="0" errors="0" time="20.68285099999979">
-<testsuite name="TC_01_productPage.test.js" timestamp="2023-07-31T17:11:47.753Z" hostname="Chrome" tests="5" failures="0" skipped="0" time="27.314" errors="0">
-<testcase name="@smoke: Login as a standard user to verify the products page and logout from the application › Login to App as a standard user" classname="TC_01_productPage.test.js" time="6.808">
+<testsuites id="" name="" tests="40" failures="4" skipped="8" errors="0" time="78.11019200000001">
+<testsuite name="TC_01_productPage.test.js" timestamp="2023-12-14T11:33:16.393Z" hostname="Chrome" tests="5" failures="1" skipped="2" time="22.384" errors="0">
+<testcase name="@smoke: Login as a standard user to verify the products page and logout from the application › Login to App as a standard user" classname="TC_01_productPage.test.js" time="8.099">
 </testcase>
-<testcase name="@smoke: Login as a standard user to verify the products page and logout from the application › Click on the &quot;About&quot; side nav bar link to check whether user is navigated to sauce labs page" classname="TC_01_productPage.test.js" time="4.043">
+<testcase name="@smoke: Login as a standard user to verify the products page and logout from the application › Click on the &quot;About&quot; side nav bar link to check whether user is navigated to sauce labs page" classname="TC_01_productPage.test.js" time="4.406">
 </testcase>
-<testcase name="Verify All Social Channel Links › Click on Facebook link and check whether user is navigated to Facebook page" classname="TC_01_productPage.test.js" time="5.699">
+<testcase name="Verify All Social Channel Links › Click on Facebook link and check whether user is navigated to Facebook page" classname="TC_01_productPage.test.js" time="9.879">
+<failure message="TC_01_productPage.test.js:187:6 Click on Facebook link and check whether user is navigated to Facebook page" type="FAILURE">
+<![CDATA[  [Chrome] › TC_01_productPage.test.js:187:6 › Verify All Social Channel Links › Click on Facebook link and check whether user is navigated to Facebook page 
+
+    Error: expect(received).toContain(expected) // indexOf
+
+    Expected substring: "Sauce Labs | Facebook"
+    Received string:    "Sauce Labs | San Francisco CA | Facebook"
+
+      202 | 		])
+      203 | 		await newPage.waitForLoadState('networkidle')
+    > 204 | 		expect(await newPage.title()).toContain(facebookTitle)
+          | 		                              ^
+      205 | 		expect(newPage.url()).toBe(facebookUrl)
+      206 | 	})
+      207 |
+
+        at C:\Users\mayuk\Documents\GitHub\Playwright-JavaScript-SauceDemo\tests\TC_01_productPage.test.js:204:33
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\TC_01_productPage-Verify-All-Social-Channel-Li-e35c0-heck-whether-user-is-navigated-to-Facebook-page-Chrome\test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\TC_01_productPage-Verify-All-Social-Channel-Li-e35c0-heck-whether-user-is-navigated-to-Facebook-page-Chrome\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\TC_01_productPage-Verify-All-Social-Channel-Li-e35c0-heck-whether-user-is-navigated-to-Facebook-page-Chrome\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\TC_01_productPage-Verify-All-Social-Channel-Li-e35c0-heck-whether-user-is-navigated-to-Facebook-page-Chrome\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\TC_01_productPage-Verify-All-Social-Channel-Li-e35c0-heck-whether-user-is-navigated-to-Facebook-page-Chrome\test-failed-2.png]]
+
+[[ATTACHMENT|test-results\TC_01_productPage-Verify-All-Social-Channel-Li-e35c0-heck-whether-user-is-navigated-to-Facebook-page-Chrome\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\TC_01_productPage-Verify-All-Social-Channel-Li-e35c0-heck-whether-user-is-navigated-to-Facebook-page-Chrome\trace.zip]]
+]]>
+</system-out>
 </testcase>
-<testcase name="Verify All Social Channel Links › Click on LinkedIn link and check whether user is navigated to LinkedIn page" classname="TC_01_productPage.test.js" time="4.288">
+<testcase name="Verify All Social Channel Links › Click on LinkedIn link and check whether user is navigated to LinkedIn page" classname="TC_01_productPage.test.js" time="0">
+<skipped>
+</skipped>
 </testcase>
-<testcase name="Verify All Social Channel Links › Click on Twitter link and check whether user is navigated to twitter page" classname="TC_01_productPage.test.js" time="6.476">
+<testcase name="Verify All Social Channel Links › Click on Twitter link and check whether user is navigated to twitter page" classname="TC_01_productPage.test.js" time="0">
+<skipped>
+</skipped>
 </testcase>
 </testsuite>
-<testsuite name="TC_02_checkoutWorkflow.test.js" timestamp="2023-07-31T17:11:47.753Z" hostname="Chrome" tests="1" failures="0" skipped="0" time="6.625" errors="0">
-<testcase name="Login as a standard user to complete the checkout workflow › Login to App as a standard user" classname="TC_02_checkoutWorkflow.test.js" time="6.625">
+<testsuite name="TC_02_checkoutWorkflow.test.js" timestamp="2023-12-14T11:33:16.393Z" hostname="Chrome" tests="1" failures="0" skipped="0" time="9.519" errors="0">
+<testcase name="Login as a standard user to complete the checkout workflow › Login to App as a standard user" classname="TC_02_checkoutWorkflow.test.js" time="9.519">
 </testcase>
 </testsuite>
-<testsuite name="TC_03_checkoutWithSUandPGU.test.js" timestamp="2023-07-31T17:11:47.753Z" hostname="Chrome" tests="1" failures="0" skipped="0" time="18.825" errors="0">
-<testcase name="Login as a Standard User to select a product item and then complete the checkout workflow with Performance Glitch User › Login to App as a standard user" classname="TC_03_checkoutWithSUandPGU.test.js" time="18.825">
+<testsuite name="TC_03_checkoutWithSUandPGU.test.js" timestamp="2023-12-14T11:33:16.393Z" hostname="Chrome" tests="1" failures="0" skipped="0" time="26.759" errors="0">
+<testcase name="Login as a Standard User to select a product item and then complete the checkout workflow with Performance Glitch User › Login to App as a standard user" classname="TC_03_checkoutWithSUandPGU.test.js" time="26.759">
 </testcase>
 </testsuite>
-<testsuite name="TC_04_checkoutWithPUandPGU.test.js" timestamp="2023-07-31T17:11:47.753Z" hostname="Chrome" tests="1" failures="0" skipped="0" time="17.032" errors="0">
-<testcase name="Login as a Problem user to select a product item and then complete the checkout workflow with Performance Glitch User › Login to App as a problem user" classname="TC_04_checkoutWithPUandPGU.test.js" time="17.032">
+<testsuite name="TC_04_checkoutWithPUandPGU.test.js" timestamp="2023-12-14T11:33:16.393Z" hostname="Chrome" tests="1" failures="0" skipped="0" time="20.173" errors="0">
+<testcase name="Login as a Problem user to select a product item and then complete the checkout workflow with Performance Glitch User › Login to App as a problem user" classname="TC_04_checkoutWithPUandPGU.test.js" time="20.173">
 </testcase>
 </testsuite>
-<testsuite name="TC_05_checkoutWithPGUandSU.test.js" timestamp="2023-07-31T17:11:47.753Z" hostname="Chrome" tests="2" failures="0" skipped="0" time="10.718" errors="0">
-<testcase name="Login as a Locked out user and Performance glitch user and complete the checkout workflow with Standard user › Login to App as a Locked out user user" classname="TC_05_checkoutWithPGUandSU.test.js" time="1.376">
+<testsuite name="TC_05_checkoutWithPGUandSU.test.js" timestamp="2023-12-14T11:33:16.393Z" hostname="Chrome" tests="2" failures="0" skipped="0" time="19.927" errors="0">
+<testcase name="Login as a Locked out user and Performance glitch user and complete the checkout workflow with Standard user › Login to App as a Locked out user user" classname="TC_05_checkoutWithPGUandSU.test.js" time="6.552">
 </testcase>
-<testcase name="Login as a Locked out user and Performance glitch user and complete the checkout workflow with Standard user › Login to App as a Performance glitch user" classname="TC_05_checkoutWithPGUandSU.test.js" time="9.342">
+<testcase name="Login as a Locked out user and Performance glitch user and complete the checkout workflow with Standard user › Login to App as a Performance glitch user" classname="TC_05_checkoutWithPGUandSU.test.js" time="13.375">
+</testcase>
+</testsuite>
+<testsuite name="TC_01_productPage.test.js" timestamp="2023-12-14T11:33:16.393Z" hostname="Firefox" tests="5" failures="1" skipped="2" time="44.205" errors="0">
+<testcase name="@smoke: Login as a standard user to verify the products page and logout from the application › Login to App as a standard user" classname="TC_01_productPage.test.js" time="16.924">
+</testcase>
+<testcase name="@smoke: Login as a standard user to verify the products page and logout from the application › Click on the &quot;About&quot; side nav bar link to check whether user is navigated to sauce labs page" classname="TC_01_productPage.test.js" time="8.861">
+</testcase>
+<testcase name="Verify All Social Channel Links › Click on Facebook link and check whether user is navigated to Facebook page" classname="TC_01_productPage.test.js" time="18.42">
+<failure message="TC_01_productPage.test.js:187:6 Click on Facebook link and check whether user is navigated to Facebook page" type="FAILURE">
+<![CDATA[  [Firefox] › TC_01_productPage.test.js:187:6 › Verify All Social Channel Links › Click on Facebook link and check whether user is navigated to Facebook page 
+
+    Error: expect(received).toContain(expected) // indexOf
+
+    Expected substring: "Sauce Labs | Facebook"
+    Received string:    "Sauce Labs | San Francisco CA | Facebook"
+
+      202 | 		])
+      203 | 		await newPage.waitForLoadState('networkidle')
+    > 204 | 		expect(await newPage.title()).toContain(facebookTitle)
+          | 		                              ^
+      205 | 		expect(newPage.url()).toBe(facebookUrl)
+      206 | 	})
+      207 |
+
+        at C:\Users\mayuk\Documents\GitHub\Playwright-JavaScript-SauceDemo\tests\TC_01_productPage.test.js:204:33
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\TC_01_productPage-Verify-All-Social-Channel-Li-e35c0-heck-whether-user-is-navigated-to-Facebook-page-Firefox\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\TC_01_productPage-Verify-All-Social-Channel-Li-e35c0-heck-whether-user-is-navigated-to-Facebook-page-Firefox\test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\TC_01_productPage-Verify-All-Social-Channel-Li-e35c0-heck-whether-user-is-navigated-to-Facebook-page-Firefox\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\TC_01_productPage-Verify-All-Social-Channel-Li-e35c0-heck-whether-user-is-navigated-to-Facebook-page-Firefox\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\TC_01_productPage-Verify-All-Social-Channel-Li-e35c0-heck-whether-user-is-navigated-to-Facebook-page-Firefox\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\TC_01_productPage-Verify-All-Social-Channel-Li-e35c0-heck-whether-user-is-navigated-to-Facebook-page-Firefox\test-failed-2.png]]
+
+[[ATTACHMENT|test-results\TC_01_productPage-Verify-All-Social-Channel-Li-e35c0-heck-whether-user-is-navigated-to-Facebook-page-Firefox\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Verify All Social Channel Links › Click on LinkedIn link and check whether user is navigated to LinkedIn page" classname="TC_01_productPage.test.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Verify All Social Channel Links › Click on Twitter link and check whether user is navigated to twitter page" classname="TC_01_productPage.test.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="TC_02_checkoutWorkflow.test.js" timestamp="2023-12-14T11:33:16.393Z" hostname="Firefox" tests="1" failures="0" skipped="0" time="19.505" errors="0">
+<testcase name="Login as a standard user to complete the checkout workflow › Login to App as a standard user" classname="TC_02_checkoutWorkflow.test.js" time="19.505">
+</testcase>
+</testsuite>
+<testsuite name="TC_03_checkoutWithSUandPGU.test.js" timestamp="2023-12-14T11:33:16.393Z" hostname="Firefox" tests="1" failures="0" skipped="0" time="41.734" errors="0">
+<testcase name="Login as a Standard User to select a product item and then complete the checkout workflow with Performance Glitch User › Login to App as a standard user" classname="TC_03_checkoutWithSUandPGU.test.js" time="41.734">
+</testcase>
+</testsuite>
+<testsuite name="TC_04_checkoutWithPUandPGU.test.js" timestamp="2023-12-14T11:33:16.393Z" hostname="Firefox" tests="1" failures="0" skipped="0" time="29.806" errors="0">
+<testcase name="Login as a Problem user to select a product item and then complete the checkout workflow with Performance Glitch User › Login to App as a problem user" classname="TC_04_checkoutWithPUandPGU.test.js" time="29.806">
+</testcase>
+</testsuite>
+<testsuite name="TC_05_checkoutWithPGUandSU.test.js" timestamp="2023-12-14T11:33:16.393Z" hostname="Firefox" tests="2" failures="0" skipped="0" time="27.289" errors="0">
+<testcase name="Login as a Locked out user and Performance glitch user and complete the checkout workflow with Standard user › Login to App as a Locked out user user" classname="TC_05_checkoutWithPGUandSU.test.js" time="8.269">
+</testcase>
+<testcase name="Login as a Locked out user and Performance glitch user and complete the checkout workflow with Standard user › Login to App as a Performance glitch user" classname="TC_05_checkoutWithPGUandSU.test.js" time="19.02">
+</testcase>
+</testsuite>
+<testsuite name="TC_01_productPage.test.js" timestamp="2023-12-14T11:33:16.393Z" hostname="Safari" tests="5" failures="1" skipped="2" time="28.483" errors="0">
+<testcase name="@smoke: Login as a standard user to verify the products page and logout from the application › Login to App as a standard user" classname="TC_01_productPage.test.js" time="12.839">
+</testcase>
+<testcase name="@smoke: Login as a standard user to verify the products page and logout from the application › Click on the &quot;About&quot; side nav bar link to check whether user is navigated to sauce labs page" classname="TC_01_productPage.test.js" time="4.786">
+</testcase>
+<testcase name="Verify All Social Channel Links › Click on Facebook link and check whether user is navigated to Facebook page" classname="TC_01_productPage.test.js" time="10.858">
+<failure message="TC_01_productPage.test.js:187:6 Click on Facebook link and check whether user is navigated to Facebook page" type="FAILURE">
+<![CDATA[  [Safari] › TC_01_productPage.test.js:187:6 › Verify All Social Channel Links › Click on Facebook link and check whether user is navigated to Facebook page 
+
+    Error: expect(received).toContain(expected) // indexOf
+
+    Expected substring: "Sauce Labs | Facebook"
+    Received string:    "Sauce Labs | San Francisco CA"
+
+      202 | 		])
+      203 | 		await newPage.waitForLoadState('networkidle')
+    > 204 | 		expect(await newPage.title()).toContain(facebookTitle)
+          | 		                              ^
+      205 | 		expect(newPage.url()).toBe(facebookUrl)
+      206 | 	})
+      207 |
+
+        at C:\Users\mayuk\Documents\GitHub\Playwright-JavaScript-SauceDemo\tests\TC_01_productPage.test.js:204:33
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\TC_01_productPage-Verify-All-Social-Channel-Li-e35c0-heck-whether-user-is-navigated-to-Facebook-page-Safari\test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\TC_01_productPage-Verify-All-Social-Channel-Li-e35c0-heck-whether-user-is-navigated-to-Facebook-page-Safari\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\TC_01_productPage-Verify-All-Social-Channel-Li-e35c0-heck-whether-user-is-navigated-to-Facebook-page-Safari\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\TC_01_productPage-Verify-All-Social-Channel-Li-e35c0-heck-whether-user-is-navigated-to-Facebook-page-Safari\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\TC_01_productPage-Verify-All-Social-Channel-Li-e35c0-heck-whether-user-is-navigated-to-Facebook-page-Safari\test-failed-2.png]]
+
+[[ATTACHMENT|test-results\TC_01_productPage-Verify-All-Social-Channel-Li-e35c0-heck-whether-user-is-navigated-to-Facebook-page-Safari\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\TC_01_productPage-Verify-All-Social-Channel-Li-e35c0-heck-whether-user-is-navigated-to-Facebook-page-Safari\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Verify All Social Channel Links › Click on LinkedIn link and check whether user is navigated to LinkedIn page" classname="TC_01_productPage.test.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Verify All Social Channel Links › Click on Twitter link and check whether user is navigated to twitter page" classname="TC_01_productPage.test.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="TC_02_checkoutWorkflow.test.js" timestamp="2023-12-14T11:33:16.393Z" hostname="Safari" tests="1" failures="0" skipped="0" time="12.519" errors="0">
+<testcase name="Login as a standard user to complete the checkout workflow › Login to App as a standard user" classname="TC_02_checkoutWorkflow.test.js" time="12.519">
+</testcase>
+</testsuite>
+<testsuite name="TC_03_checkoutWithSUandPGU.test.js" timestamp="2023-12-14T11:33:16.393Z" hostname="Safari" tests="1" failures="0" skipped="0" time="31.405" errors="0">
+<testcase name="Login as a Standard User to select a product item and then complete the checkout workflow with Performance Glitch User › Login to App as a standard user" classname="TC_03_checkoutWithSUandPGU.test.js" time="31.405">
+</testcase>
+</testsuite>
+<testsuite name="TC_04_checkoutWithPUandPGU.test.js" timestamp="2023-12-14T11:33:16.393Z" hostname="Safari" tests="1" failures="0" skipped="0" time="22.734" errors="0">
+<testcase name="Login as a Problem user to select a product item and then complete the checkout workflow with Performance Glitch User › Login to App as a problem user" classname="TC_04_checkoutWithPUandPGU.test.js" time="22.734">
+</testcase>
+</testsuite>
+<testsuite name="TC_05_checkoutWithPGUandSU.test.js" timestamp="2023-12-14T11:33:16.393Z" hostname="Safari" tests="2" failures="0" skipped="0" time="19.124" errors="0">
+<testcase name="Login as a Locked out user and Performance glitch user and complete the checkout workflow with Standard user › Login to App as a Locked out user user" classname="TC_05_checkoutWithPGUandSU.test.js" time="2.896">
+</testcase>
+<testcase name="Login as a Locked out user and Performance glitch user and complete the checkout workflow with Standard user › Login to App as a Performance glitch user" classname="TC_05_checkoutWithPGUandSU.test.js" time="16.228">
+</testcase>
+</testsuite>
+<testsuite name="TC_01_productPage.test.js" timestamp="2023-12-14T11:33:16.393Z" hostname="Edge" tests="5" failures="1" skipped="2" time="18.364" errors="0">
+<testcase name="@smoke: Login as a standard user to verify the products page and logout from the application › Login to App as a standard user" classname="TC_01_productPage.test.js" time="6.366">
+</testcase>
+<testcase name="@smoke: Login as a standard user to verify the products page and logout from the application › Click on the &quot;About&quot; side nav bar link to check whether user is navigated to sauce labs page" classname="TC_01_productPage.test.js" time="2.323">
+</testcase>
+<testcase name="Verify All Social Channel Links › Click on Facebook link and check whether user is navigated to Facebook page" classname="TC_01_productPage.test.js" time="9.675">
+<failure message="TC_01_productPage.test.js:187:6 Click on Facebook link and check whether user is navigated to Facebook page" type="FAILURE">
+<![CDATA[  [Edge] › TC_01_productPage.test.js:187:6 › Verify All Social Channel Links › Click on Facebook link and check whether user is navigated to Facebook page 
+
+    Error: expect(received).toContain(expected) // indexOf
+
+    Expected substring: "Sauce Labs | Facebook"
+    Received string:    "Sauce Labs | San Francisco CA | Facebook"
+
+      202 | 		])
+      203 | 		await newPage.waitForLoadState('networkidle')
+    > 204 | 		expect(await newPage.title()).toContain(facebookTitle)
+          | 		                              ^
+      205 | 		expect(newPage.url()).toBe(facebookUrl)
+      206 | 	})
+      207 |
+
+        at C:\Users\mayuk\Documents\GitHub\Playwright-JavaScript-SauceDemo\tests\TC_01_productPage.test.js:204:33
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\TC_01_productPage-Verify-All-Social-Channel-Li-e35c0-heck-whether-user-is-navigated-to-Facebook-page-Edge\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\TC_01_productPage-Verify-All-Social-Channel-Li-e35c0-heck-whether-user-is-navigated-to-Facebook-page-Edge\test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\TC_01_productPage-Verify-All-Social-Channel-Li-e35c0-heck-whether-user-is-navigated-to-Facebook-page-Edge\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\TC_01_productPage-Verify-All-Social-Channel-Li-e35c0-heck-whether-user-is-navigated-to-Facebook-page-Edge\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\TC_01_productPage-Verify-All-Social-Channel-Li-e35c0-heck-whether-user-is-navigated-to-Facebook-page-Edge\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\TC_01_productPage-Verify-All-Social-Channel-Li-e35c0-heck-whether-user-is-navigated-to-Facebook-page-Edge\test-failed-2.png]]
+
+[[ATTACHMENT|test-results\TC_01_productPage-Verify-All-Social-Channel-Li-e35c0-heck-whether-user-is-navigated-to-Facebook-page-Edge\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Verify All Social Channel Links › Click on LinkedIn link and check whether user is navigated to LinkedIn page" classname="TC_01_productPage.test.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Verify All Social Channel Links › Click on Twitter link and check whether user is navigated to twitter page" classname="TC_01_productPage.test.js" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="TC_02_checkoutWorkflow.test.js" timestamp="2023-12-14T11:33:16.393Z" hostname="Edge" tests="1" failures="0" skipped="0" time="6.613" errors="0">
+<testcase name="Login as a standard user to complete the checkout workflow › Login to App as a standard user" classname="TC_02_checkoutWorkflow.test.js" time="6.613">
+</testcase>
+</testsuite>
+<testsuite name="TC_03_checkoutWithSUandPGU.test.js" timestamp="2023-12-14T11:33:16.393Z" hostname="Edge" tests="1" failures="0" skipped="0" time="20.779" errors="0">
+<testcase name="Login as a Standard User to select a product item and then complete the checkout workflow with Performance Glitch User › Login to App as a standard user" classname="TC_03_checkoutWithSUandPGU.test.js" time="20.779">
+</testcase>
+</testsuite>
+<testsuite name="TC_04_checkoutWithPUandPGU.test.js" timestamp="2023-12-14T11:33:16.393Z" hostname="Edge" tests="1" failures="0" skipped="0" time="16.374" errors="0">
+<testcase name="Login as a Problem user to select a product item and then complete the checkout workflow with Performance Glitch User › Login to App as a problem user" classname="TC_04_checkoutWithPUandPGU.test.js" time="16.374">
+</testcase>
+</testsuite>
+<testsuite name="TC_05_checkoutWithPGUandSU.test.js" timestamp="2023-12-14T11:33:16.393Z" hostname="Edge" tests="2" failures="0" skipped="0" time="13.059" errors="0">
+<testcase name="Login as a Locked out user and Performance glitch user and complete the checkout workflow with Standard user › Login to App as a Locked out user user" classname="TC_05_checkoutWithPGUandSU.test.js" time="2.22">
+</testcase>
+<testcase name="Login as a Locked out user and Performance glitch user and complete the checkout workflow with Standard user › Login to App as a Performance glitch user" classname="TC_05_checkoutWithPGUandSU.test.js" time="10.839">
 </testcase>
 </testsuite>
 </testsuites>

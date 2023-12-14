@@ -37,7 +37,7 @@
   "author": "Jay Kishore Duvvuri",
   "license": "ISC",
   "dependencies": {
-    "@playwright/test": "^1.36.2",
+    "@playwright/test": "^1.40.1",
     "allure-playwright": "^2.4.0",
     "fs": "^0.0.1-security",
     "prettier": "^2.6.2"
